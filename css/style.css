@@ -38,7 +38,7 @@ main{
     background-position: top left, bottom right;
     background-repeat: no-repeat, no-repeat;
     background-size: contain, contain;
-    padding: 8.5rem;
+    padding: 3rem;
     color: var(--clr-Very-Dark-Magenta);
     height: 100%;
     font-size: 1rem;
