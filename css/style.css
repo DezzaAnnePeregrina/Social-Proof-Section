@@ -102,7 +102,7 @@ h1{
     border-radius: .5rem;
     color: var(--clr-White);
     padding: 2.5rem;
-    max-height: 210px;
+    height: 210px;
     flex-direction: column;
     gap: 1rem;
 }
@@ -143,4 +143,102 @@ span{
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 800px) {
+    main{
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .details__ratings{
+        flex-wrap: wrap;
+        gap: 0rem;
+    }
+
+    .ratings{
+        flex: 1;
+    }
+
+    .ratings__reviews{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .ratings__reviews:nth-child(1){
+        margin-left: 1rem;
+    }
+    
+    .ratings__reviews:nth-child(2){
+        margin-left: 2rem;
+    }
+    
+    .ratings__reviews:nth-child(3){
+        margin-left: 3rem;
+    }
+
+    .card__buyer{
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    main{
+        padding: 2rem;
+        gap: 2rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+
+    .details{
+        text-align: center;
+    }
+
+    .details__ratings{
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .ratings__reviews{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .ratings__reviews:nth-child(1){
+        margin-left: 0;
+    }
+    
+    .ratings__reviews:nth-child(2){
+        margin-left: 0;
+    }
+    
+    .ratings__reviews:nth-child(3){
+        margin-left: 0;
+    }
+
+    .card__buyer:nth-child(1){
+        margin-top: 0;
+    }
+    
+    .card__buyer:nth-child(2){
+        margin-top: 0;
+    }
+    
+    .card__buyer:nth-child(3){
+        margin-top: 0;
+    }
+
+    .cards{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .card__buyer{
+        min-height: 270px;
+    }
 }
