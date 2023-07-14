@@ -27,6 +27,10 @@
 body{
     font-size: var(--fs);
     min-height: 100vh;
+    background-image: url(/images/bg-pattern-top-desktop.svg),url(/images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,13 +42,9 @@ body{
 }
 
 main{
-    background-image: url(/images/bg-pattern-top-desktop.svg),url(/images/bg-pattern-bottom-desktop.svg);
-    background-position: top left, bottom right;
-    background-repeat: no-repeat, no-repeat;
-    background-size: contain, contain;
     padding: 3rem;
+    max-width: 1024px;
     color: var(--clr-Very-Dark-Magenta);
-    max-width: 100vw;
     font-size: 1rem;
     font-family: var(--ff);
     flex-direction: column;
