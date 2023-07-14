@@ -27,6 +27,10 @@
 body{
     font-size: var(--fs);
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .flex{
@@ -40,7 +44,7 @@ main{
     background-size: contain, contain;
     padding: 3rem;
     color: var(--clr-Very-Dark-Magenta);
-    height: 100%;
+    max-width: 100vw;
     font-size: 1rem;
     font-family: var(--ff);
     flex-direction: column;
